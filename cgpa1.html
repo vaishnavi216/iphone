@@ -1,0 +1,1011 @@
+
+
+<html>
+<head>
+<title>CGPA CALCULATION</title>
+<script>
+ 
+function gpa()
+{
+ 
+ window.alert("welcome");
+ var i,j;
+ var g=[];
+ var c=[];
+ var m=[];
+ var gpa;
+ var csum=0,msum=0,gsum=0;
+ csum=parseInt(csum);
+ msum=parseInt(msum);
+ gsum=parseInt(gsum);
+ alert("hii");
+
+
+ for(j=1;i<=6;j++)
+ {
+ g[j]=document.getElementById(i).value;
+ alert("grade"+i+g[j]);
+ }
+ 
+ for(var i=1;i<=6;i++)
+ {
+  
+ c[i]=document.getElementById(i).value;
+ c[i]=parseInt(c[i]);
+ csum=csum+c[i];
+ csum=parseInt(csum);
+ }
+ 
+ for(i=1,j=1;i<=6;i++,j++)
+ {
+  if(g[j] == 'S')
+{
+m[i] = c[i]*10;
+m[i]=parseInt(m[i]);
+
+}
+else if(g[j] == 'A')
+{
+m[i] = c[i]*9;
+m[i]=parseInt(m[i]);
+}
+else if (g[j] == 'B')
+{
+m[i] = c[i]*8;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'C')
+{
+m[i] = c[i]*7;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'D')
+{
+m[i] = c[i]*6;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'E')
+{
+m[i] = c[i]*5;
+m[i]=parseInt(m[i]);
+}
+
+else if(g[j] == "RA")
+{
+alert("The GPA cannot be calculated");
+}
+ 
+msum=msum+m[i];
+msum=parseInt(msum);
+}
+
+gpa=msum/csum;
+
+alert("your gpa is"+gpa);
+
+document.getElementById("tt").value=gpa;
+
+}
+
+function gpa2()
+{
+ 
+ window.alert("welcome");
+ var i,j;
+ var g=[];
+ var c=[];
+ var m=[];
+ var gpa;
+ var csum=0,msum=0,gsum=0;
+ csum=parseInt(csum);
+ msum=parseInt(msum);
+ gsum=parseInt(gsum);
+ alert("hii");
+
+
+ for(j=1;i<=126;,j++)
+ {
+ g[j]=document.getElementById(i).value;
+ alert("grade"+i+g[j]);
+ }
+ 
+ for(var i=1;i<=6;i++)
+ {
+  
+ c[i]=document.getElementById(i).value;
+ c[i]=parseInt(c[i]);
+ csum=csum+c[i];
+ csum=parseInt(csum);
+ }
+ 
+ for(i=1,j=1;i<=6;i++,j++)
+ {
+  if(g[j] == 'S')
+{
+m[i] = c[i]*10;
+m[i]=parseInt(m[i]);
+
+}
+else if(g[j] == 'A')
+{
+m[i] = c[i]*9;
+m[i]=parseInt(m[i]);
+}
+else if (g[j] == 'B')
+{
+m[i] = c[i]*8;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'C')
+{
+m[i] = c[i]*7;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'D')
+{
+m[i] = c[i]*6;
+m[i]=parseInt(m[i]);
+}
+else if(g[j] == 'E')
+{
+m[i] = c[i]*5;
+m[i]=parseInt(m[i]);
+}
+
+else if(g[j] == "RA")
+{
+alert("The GPA cannot be calculated");
+}
+ 
+msum=msum+m[i];
+msum=parseInt(msum);
+}
+
+gpa=msum/csum;
+
+alert("your gpa is"+gpa);
+
+document.getElementById("tt2").value=gpa;
+
+
+
+}
+
+
+</script>
+<style>
+ body{
+   background-color:plum;
+}
+</style>
+
+</head>
+<body>
+<center>
+ <h1>SEMESTER 1</h1>
+ <form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select" id="21">
+    <option value="S" id="11">S</option>
+    <option value="A" id="12">A</option>
+    <option value="B" id="13">B</option>
+    <option value="C" id="14">C</option>
+    <option value="D" id="15">D</option>
+    <option value="E" id="16">E</option>
+    <option value="RE" id="17">RE</option>
+  </select></td>
+  <td><input type="text" id="1" name="numb1"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select" id="22">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="2" name="numb2"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select" id="23">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="3" name="numb3"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select" id="24">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="4" name="numb4"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select" id="25">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="5" name="numb5"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select" id="26">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="6" name="numb6"/></td>
+  </tr>
+  </table>
+  <label>GPA</label>
+  <input type="text" id="tt" onclick="gpa()" />
+ </form>
+
+ <h1>SEMESTER 2</h1>
+ <form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select" id="121">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="1" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select" id="122">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="2" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select" id="123">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="3" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select" id="124">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="4" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select" id="125">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="5" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select" id="126">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="6" name="numbe"/></td>
+  </tr>
+  </table>
+ <label>GPA</label>
+  <input type="text" id="tt2" onclick="gpa2()" />
+</form>
+
+<h1>SEMESTER 3</h1>
+<form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select" id="11">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="1" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select" id="12">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="2" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select" id="13">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="3" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select" id="14">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="4" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select" id="15">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="5" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select" id="16">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="6" name="numbe"/></td>
+  </tr>
+  </table>
+<label>GPA</label>
+  <input type="text" id="tt3" onclick="gpa()"/>
+</form>
+
+<h1>SEMESTER 4</h1>
+<form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 4</label></th>
+  <td>
+ <select name="select" id="11">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="1" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select" id="12">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="2" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select" id="13">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="3" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select" id="14">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="4" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select" id="15">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="5" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select" id="16">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="6" name="numbe"/></td>
+  </tr>
+  </table>
+ <label>GPA</label>
+  <input type="text" id="tt4" onclick="gpa()" />
+</form>
+
+<h1>SEMESTER 5</h1>
+<form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+  </table>
+ <label>GPA</label>
+  <input type="text" id="tt5" onclick="gpa()" />
+</form>
+
+<h1>SEMESTER 6</h1>
+<form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+  </table>
+<label>GPA</label>
+  <input type="text" id="tt6" name="gpa6"/>
+
+
+<h1>SEMESTER 7</h1>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 1</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+  </table>
+ <label>GPA</label>
+  <input type="text" id="tt7" onclick="gpa()" />
+</form>
+
+<h1>SEMESTER 8</h1>
+<form>
+ <table>
+ <tr>
+ <td></td>
+ <th><h4>grade</h4></th>
+  <th><h4>cradit</h4></th>
+ </tr>
+ <tr>
+  <th><label>subject 8</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 2</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+ <tr>
+  <th><label>subject 3</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+ <th><label>subject 4</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 5</label></th>
+  <td>
+ <select name="select"><option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+
+<tr>
+  <th><label>subject 6</label></th>
+  <td>
+ <select name="select">
+    <option value="S">S</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+    <option value="E">E</option>
+    <option value="RE">RE</option>
+  </select></td>
+  <td><input type="text" id="num" name="numbe"/></td>
+  </tr>
+  </table>
+ <label>GPA</label>
+  <input type="text" id="tt8" onclick="gpa()" /><br><br><br>
+  <input type="button" value="submit" id="b" onclick="gpa()" /><br><br><br>
+</form>
+ 
+ <label>CGPA</label>
+  <input type="text" id="cg" name="cgpa"/>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
